@@ -1,4 +1,5 @@
 public class RajaMantri extends Activity {
+<<<<<<< HEAD
 
 	@Override
 	public void onBackPressed() {
@@ -7,11 +8,25 @@ public class RajaMantri extends Activity {
 
 	@Override
 	protected void onPostResume(){
+=======
+    
+	
+	@Override
+	public void onBackPressed() {
+		
+
+		
+	}
+
+	@Override
+	protected void onPostResume() {
+>>>>>>> experiment
 		// TODO Auto-generated method stub
 		super.onpostresume();
 	}
 
 	@Override
+<<<<<<< HEAD
 	public boolean onKeyDown(intkeyCode,KeyEventevent){
 		AlertDialogdialog=new AlertDialog.Builder(this).create();
 		dialog.setTitle("Exit game!");
@@ -19,20 +34,36 @@ public class RajaMantri extends Activity {
 		dialog.setButton("Exit", new DialogInterface.OnClickListener(){
 			
 			public void onClick(DialogInterface dialog, int which){
+=======
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		AlertDialog dialog = new AlertDialog.Builder(this).create();
+		dialog.setTitle("Exit game!");
+		dialog.setMessage("Are you sure you want to exit the game?");
+		dialog.setButton("Exit", new DialogInterface.OnClickListener() {
+			
+			public void onClick(DialogInterface dialog, int which) {
+>>>>>>> experiment
 				
 				finish();
 				
 			}
 		});
+<<<<<<< HEAD
 		dialog.setButton2("Cancel", new DialogInterface.OnClickListener(){
 			
 			public void onClick(DialogInterface dialog, int which){
+=======
+		dialog.setButton2("Cancel", new DialogInterface.OnClickListener() {
+			
+			public void onClick(DialogInterface dialog, int which) {
+>>>>>>> experiment
 				
 				dialog.dismiss();
 				
 			}
 		});
 		dialog.show();
+<<<<<<< HEAD
 		return super.onKeyDown(keyCode,event);
 	}
 
@@ -44,6 +75,19 @@ public class RajaMantri extends Activity {
 		dialog.setButton("Exit", new DialogInterface.OnClickListener(){
 			
 			public void onClick(DialogInterface dialog, int which){
+=======
+		return super.onKeyDown(keyCode, event);
+	}
+
+	@Override
+	public void onLowMemory() {
+		AlertDialog dialog = new AlertDialog.Builder(this).create();
+		dialog.setTitle("Low memory!");
+		dialog.setMessage("Too many apps open, kindly close some other apps and try again!");
+		dialog.setButton("Exit", new DialogInterface.OnClickListener() {
+			
+			public void onClick(DialogInterface dialog, int which) {
+>>>>>>> experiment
 				
 				finish();
 				
@@ -57,11 +101,16 @@ public class RajaMantri extends Activity {
 	}
 
 	@Override
+<<<<<<< HEAD
 	protected void onPause(){
+=======
+	protected void onPause() {
+>>>>>>> experiment
 		// TODO Auto-generated method stub
 		super.onPause();
 	}
 
+<<<<<<< HEAD
 	String[] solutionArray={"RAJA","MANTRI","CHOR","SIPAHI"};
 	String[] playersArray={"Player1","Player2","Player3","Player4"};
 	static String player1_name="";
@@ -85,6 +134,31 @@ public class RajaMantri extends Activity {
 	int count=0;
 	
 	Button btn;
+=======
+	String[] solutionArray = { "RAJA", "MANTRI", "CHOR", "SIPAHI"};
+	String[] playersArray = {"Player1", "Player2", "Player3", "Player4"};
+	static String player1_name = "" ;
+	static String player2_name = "";
+	static String player3_name = "";
+	static String player4_name = "";
+	static String player1_role = "";
+	static String player2_role = "";
+	static String player3_role = "";
+	static String player4_role = "";
+	static boolean guess = false;
+	static String player1 = "";
+	static String player2 = "";
+	static String player3 = "";
+	static String player4 = "";
+	static int i=0,j=0,k=0,l=0;
+	static int p1score = 0;
+	static int p2score = 0;
+	static int p3score = 0;
+	static int p4score = 0;
+	int count = 0;
+	
+	Button btnRajaMantri;
+>>>>>>> experiment
 	Button btnHelp;
 	ImageView btn9;
 	Button btnPlay;
@@ -116,12 +190,17 @@ public class RajaMantri extends Activity {
 	Bundle savedInstanceState2;
 	Button btnMainMenu;
     
+<<<<<<< HEAD
 	String nextTurn="";
+=======
+	String nextTurn = "";
+>>>>>>> experiment
 	
 	
     public void onRestart(){
     	
     	super.onRestart();
+<<<<<<< HEAD
     /*	player1_name="";
     	player2_name="";
     	player3_name="";
@@ -129,6 +208,15 @@ public class RajaMantri extends Activity {
     	guess=false;
     	player1="";
     	player2="";
+=======
+    /*	player1_name = "" ;
+    	player2_name = "";
+    	player3_name = "";
+    	player4_name = "";
+    	guess = false;
+    	player1 = "";
+    	player2 = "";
+>>>>>>> experiment
     	player3 = "";
     	player4 = "";
     	i=0;j=0;k=0;l=0;
@@ -143,7 +231,11 @@ public class RajaMantri extends Activity {
     public void onResume(){
     	
     	super.onResume();
+<<<<<<< HEAD
     	/*player1_name = "";
+=======
+    	/*player1_name = "" ;
+>>>>>>> experiment
     	player2_name = "";
     	player3_name = "";
     	player4_name = "";
@@ -218,7 +310,11 @@ public class RajaMantri extends Activity {
 	    // Initiate a generic request to load it with an ad
 	    adView.loadAd(new AdRequest());
 	    
+<<<<<<< HEAD
  		editTxtPlayer1 = (EditText)findViewById(R.id.editTxtPlayer1);
+=======
+ 		editTxtPlayer1 = (EditText) findViewById(R.id.editTxtPlayer1);
+>>>>>>> experiment
  		editTxtPlayer2 = (EditText)findViewById(R.id.editTxtPlayer2);
  		editTxtPlayer3 = (EditText)findViewById(R.id.editTxtPlayer3);
  		editTxtPlayer4 = (EditText)findViewById(R.id.editTxtPlayer4);
@@ -228,7 +324,11 @@ public class RajaMantri extends Activity {
  		lblPlayer3 = (TextView) findViewById(R.id.lblPlayer3);
  		lblPlayer4 = (TextView) findViewById(R.id.lblPlayer4);
  		
+<<<<<<< HEAD
  		Display display = getWindowManager().getDefaultDisplay();
+=======
+ 		Display display = getWindowManager().getDefaultDisplay(); 
+>>>>>>> experiment
  		int width = display.getWidth();
  		int height = display.getHeight();
  		
@@ -250,7 +350,11 @@ public class RajaMantri extends Activity {
 			
 			
 			public void onClick(View v) {
+<<<<<<< HEAD
 				Intent i = new Intent(RajaMantri.this,RajaMantri.class);
+=======
+				Intent i = new Intent(RajaMantri.this, RajaMantri.class);
+>>>>>>> experiment
 				RajaMantri.this.startActivity(i);
 				finish();
 				
@@ -277,6 +381,7 @@ public class RajaMantri extends Activity {
 				}else{
 					setContentView(R.layout.rmcsgnew);	
 					 // Create the adView
+<<<<<<< HEAD
 				AdView adView = new AdView(RajaMantri.this,AdSize.BANNER,"a14e156523d01de");
 				// Lookup your LinearLayout assuming it’s been given
 				// the attribute android:id="@+id/mainLayout"
@@ -285,6 +390,16 @@ public class RajaMantri extends Activity {
 				layout.addView(adView);
 				// Initiate a generic request to load it with an ad
 				adView.loadAd(new AdRequest());
+=======
+				    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+				    // Lookup your LinearLayout assuming it’s been given
+				    // the attribute android:id="@+id/mainLayout"
+				    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayout);
+				    // Add the adView to it
+				    layout.addView(adView);
+				    // Initiate a generic request to load it with an ad
+				    adView.loadAd(new AdRequest());
+>>>>>>> experiment
 
 					txtTurn = (TextView)findViewById(R.id.txtTurn);
 					txtTurn.setText("Click on SHUFFLE!");
@@ -295,7 +410,11 @@ public class RajaMantri extends Activity {
 			 		
 			 		
 			 		
+<<<<<<< HEAD
 					txtPlayer1 = (TextView)findViewById(R.id.txtPlayer1);
+=======
+					txtPlayer1 = (TextView) findViewById(R.id.txtPlayer1);
+>>>>>>> experiment
 					txtPlayer1.setText("1."+player1_name + " [" + p1score + "]");
 					
 					txtPlayer2 = (TextView) findViewById(R.id.txtPlayer2);
@@ -332,17 +451,36 @@ public class RajaMantri extends Activity {
 		 				
 		 			}
 		 		});
+<<<<<<< HEAD
 				}
 		
 		}
 		
 			});
+=======
+		         
+		         
+		         
+				}
+		         
+		     }
+		     
+		 	});
+>>>>>>> experiment
 			}
 
 		
 		});
+<<<<<<< HEAD
 		}
 
+=======
+ 		 
+       
+    }
+    
+    
+>>>>>>> experiment
     public void makeGuess(){
     	
     	btnPlay.setText("SHUFFLE");
@@ -540,12 +678,21 @@ public class RajaMantri extends Activity {
 			});
 		}
 		
+<<<<<<< HEAD
 }
 
 
 public void shuffle(){
 	
 	btnPlay.setText("Guess");
+=======
+    }
+    
+    
+    public void shuffle(){
+    	
+    	btnPlay.setText("Guess");
+>>>>>>> experiment
 			btnPlay.setClickable(false);
 			shuffleArray(solutionArray);
 			txtTurn.setText(player1_name + "'s" + " turn!");
@@ -603,7 +750,11 @@ public void shuffle(){
 							
 							player2_role = "CHOR";
 						}
+<<<<<<< HEAD
 					
+=======
+				    	
+>>>>>>> experiment
 						nextTurn = player3_name + "'s" + " turn!";
 						
 					}
@@ -625,7 +776,11 @@ public void shuffle(){
 							
 							player3_role = "CHOR";
 						}
+<<<<<<< HEAD
 					
+=======
+				    	
+>>>>>>> experiment
 						nextTurn = player4_name + "'s" + " turn!";
 						
 					}
@@ -648,7 +803,11 @@ public void shuffle(){
 							
 							player4_role = "CHOR";
 						}
+<<<<<<< HEAD
 					
+=======
+				    	
+>>>>>>> experiment
 						
 						nextTurn = "Click on Guess!";
 						
@@ -712,7 +871,11 @@ public void shuffle(){
 								
 								player1_role = "CHOR";
 							}
+<<<<<<< HEAD
 						
+=======
+					    	
+>>>>>>> experiment
 							nextTurn = player2_name+ "'s" + " turn!";
 							
 						}
@@ -734,7 +897,11 @@ public void shuffle(){
 								
 								player2_role = "CHOR";
 							}
+<<<<<<< HEAD
 						
+=======
+					    	
+>>>>>>> experiment
 							nextTurn = player3_name+ "'s" + " turn!";
 							
 						}
@@ -756,7 +923,11 @@ public void shuffle(){
 								
 								player3_role = "CHOR";
 							}
+<<<<<<< HEAD
 						
+=======
+					    	
+>>>>>>> experiment
 							nextTurn = player4_name+ "'s" + " turn!";
 							
 						}
@@ -778,7 +949,11 @@ public void shuffle(){
 								
 								player4_role = "CHOR";
 							}
+<<<<<<< HEAD
 						
+=======
+					    	
+>>>>>>> experiment
 							nextTurn = "Click on Guess!";
 							
 						}
@@ -806,7 +981,12 @@ public void shuffle(){
 						});
 					}
 				});
+<<<<<<< HEAD
 		
+=======
+		        
+		        
+>>>>>>> experiment
 			btnPod3 = (Button)findViewById(R.id.btnPod3);
 			btnPod3.setBackgroundResource(R.drawable.podblclosed);
 			btnPod3.setOnClickListener(new OnClickListener() {
@@ -838,7 +1018,11 @@ public void shuffle(){
 								
 								player1_role = "CHOR";
 							}
+<<<<<<< HEAD
 						
+=======
+					    	
+>>>>>>> experiment
 							nextTurn = player2_name+ "'s" + " turn!";
 							
 						}
@@ -860,7 +1044,11 @@ public void shuffle(){
 								
 								player2_role = "CHOR";
 							}
+<<<<<<< HEAD
 						
+=======
+					    	
+>>>>>>> experiment
 							nextTurn = player3_name+ "'s" + " turn!";
 							
 						}
@@ -931,7 +1119,11 @@ public void shuffle(){
 						});
 					}
 				});
+<<<<<<< HEAD
 		
+=======
+		     
+>>>>>>> experiment
 			
 			
 			
@@ -1058,17 +1250,31 @@ public void shuffle(){
 							}
 						});
 					}
+<<<<<<< HEAD
 				});
+=======
+				});    
+>>>>>>> experiment
 			
 			btnPod1.setText("");
 			btnPod2.setText("");
 			btnPod3.setText("");
 			btnPod4.setText("");
+<<<<<<< HEAD
 }
 
 public void setRole(String role, String player){
 	
 	if(player1.equals("MANTRI")){
+=======
+    	
+    	
+    }
+    
+    public void setRole(String role, String player){
+    	
+    	if(player1.equals("MANTRI")){
+>>>>>>> experiment
 			
 			player4_role = "MANTRI";
 		}
@@ -1084,6 +1290,7 @@ public void setRole(String role, String player){
 			
 			player4_role = "CHOR";
 		}
+<<<<<<< HEAD
 	
 	
 }
@@ -1112,6 +1319,37 @@ static void updateScore(){
 		p1score=i;
 		txtTurn.setText(player1_name+" is right!");
 		btnPod1.setText(player1);
+=======
+    	
+    	
+    } 
+    
+    void shuffleArray(String[] solutionArray)
+    {
+    	Random rnd = new Random();
+    	for (int i = solutionArray.length - 1; i >= 0; i--)
+    		{
+    			int index = rnd.nextInt(i + 1);
+  
+    			String a = solutionArray[index];
+    			solutionArray[index] = solutionArray[i];
+    			solutionArray[i] = a;
+    		}
+	}
+    
+    static void updateScore(){
+    	
+    	Log.v("AkhandBakar", "##########"+ guess);
+    	if(player1_role.equals("MANTRI"))
+    	{
+    		Log.v("AkhandBakar", "##########Mantri"+ player1_name);
+    	if(guess)
+    		{
+    		i = i+80;
+    		p1score=i;
+    		txtTurn.setText(player1_name+" is right!");
+    		btnPod1.setText(player1);
+>>>>>>> experiment
 			btnPod2.setText(player2);
 			btnPod3.setText(player3);
 			btnPod4.setText(player4);
@@ -1119,6 +1357,7 @@ static void updateScore(){
 			btnPod2.setBackgroundResource(R.drawable.podopen);
 			btnPod3.setBackgroundResource(R.drawable.podopen);
 			btnPod4.setBackgroundResource(R.drawable.podopen);
+<<<<<<< HEAD
 		if(player2_role.equals("CHOR"))
 			{
 			p2score=j;
@@ -1182,6 +1421,71 @@ if(player3_role.equals("RAJA")){
 		p1score = i;
 		txtTurn.setText(player1_name+" is wrong!");
 		btnPod1.setText(player1);
+=======
+    		if(player2_role.equals("CHOR"))
+    			{
+    			p2score=j;
+    			if(player3_role.equals("RAJA")){
+    				
+    				k = k+100;
+    				l = l+50;
+    				p3score=k;
+    				p4score=l;
+    			}else{
+    				
+    				l = l+100;
+    				k = k+50;
+    				p4score=l;
+    				p3score=k;
+    			}
+    			}
+    		if(player3_role.equals("CHOR"))
+    			{
+    			
+    			p3score=k;
+    			
+    			
+    			if(player2_role.equals("RAJA")){
+    				
+    				j = j+100;
+    				l = l+50;
+    				p2score=j;
+    				p4score=l;
+    			}else{
+    				
+    				l = l+100;
+    				j = j+50;
+    				p4score=l;
+    				p2score=j;
+    			}
+    			}
+    		if(player4_role.equals("CHOR"))
+    			{
+    			
+    			p4score=l;
+    			
+    			if(player3_role.equals("RAJA")){
+    				
+    				k = k+100;
+    				j = j+50;
+    				p2score=j;
+    				p3score=k;
+    			}else{
+    				
+    				j = j+100;
+    				k = k+50;
+    				p3score=k;
+    				p2score=j;
+    			}
+    			}
+    		}
+    	else
+    		{
+    		i=i-80;
+    		p1score = i;
+    		txtTurn.setText(player1_name+" is wrong!");
+    		btnPod1.setText(player1);
+>>>>>>> experiment
 			btnPod2.setText(player2);
 			btnPod3.setText(player3);
 			btnPod4.setText(player4);
@@ -1246,6 +1550,7 @@ if(player3_role.equals("RAJA")){
 				p2score=j;
 			}
 			}
+<<<<<<< HEAD
 		}
 
 	}
@@ -1258,6 +1563,20 @@ if(player2_role.equals("MANTRI"))
 		p2score=j;
 		txtTurn.setText(player2_name+" is right!");
 		btnPod1.setText(player1);
+=======
+    		}
+
+    	}
+    if(player2_role.equals("MANTRI"))
+    	{
+    	if(guess)
+    		{
+    		Log.v("AkhandBakar", "##########Mantri"+ player2_name);
+    		j = j+80;
+    		p2score=j;
+    		txtTurn.setText(player2_name+" is right!");
+    		btnPod1.setText(player1);
+>>>>>>> experiment
 			btnPod2.setText(player2);
 			btnPod3.setText(player3);
 			btnPod4.setText(player4);
@@ -1265,6 +1584,7 @@ if(player2_role.equals("MANTRI"))
 			btnPod2.setBackgroundResource(R.drawable.podopen);
 			btnPod3.setBackgroundResource(R.drawable.podopen);
 			btnPod4.setBackgroundResource(R.drawable.podopen);
+<<<<<<< HEAD
 		if(player1_role.equals("CHOR"))
 			{
 			p1score=i;
@@ -1298,6 +1618,41 @@ if(player2_role.equals("MANTRI"))
 				p1score=i;
 				p4score=l;
 			
+=======
+    		if(player1_role.equals("CHOR"))
+    			{
+    			p1score=i;
+    			
+    			if(player3_role.equals("RAJA")){
+    			
+    				k = k+100;
+    				l = l+50;
+    				p3score=k;
+    				p4score=l;
+    			
+    			}else{
+    				
+    				l = l+100;
+    				k = k+50;
+    				p4score=l;
+    				p3score=k;
+    			}
+    			
+    			}
+    		if(player3_role.equals("CHOR"))
+    			{
+    			
+    			p3score=k;
+    			
+    			
+    			if(player1_role.equals("RAJA")){
+    				
+    				i = i+100;
+    				l = l+50;
+    				p1score=i;
+    				p4score=l;
+    				
+>>>>>>> experiment
     			}else{
     				
     				l = l+100;
@@ -1527,15 +1882,24 @@ if(player2_role.equals("MANTRI"))
 				j = j+100;
 				l = l+50;
 				p2score=j;
+<<<<<<< HEAD
 			p4score=l;
 			
+=======
+    			p4score=l;
+    			
+>>>>>>> experiment
 				
 			}else{
 				
 				l = l+100;
 				j = j+50;
 				p2score=j;
+<<<<<<< HEAD
 			p4score=l;
+=======
+    			p4score=l;
+>>>>>>> experiment
 				
 				
 			}
@@ -1574,19 +1938,28 @@ if(player2_role.equals("MANTRI"))
 				j = j+100;
 				i = i+50;
 				p1score=i;
+<<<<<<< HEAD
 			p2score=j;
+=======
+    			p2score=j;
+>>>>>>> experiment
 				
 			}else{
 				
 				j = j+50;
 				i = i+100;
 				p1score=i;
+<<<<<<< HEAD
 			p2score=j;
+=======
+    			p2score=j;
+>>>>>>> experiment
 				
 			}
 			
 			
 			}
+<<<<<<< HEAD
 		}
 
 	}
@@ -1599,6 +1972,20 @@ if(player4_role.equals("MANTRI"))
 		p4score=l;
 		txtTurn.setText(player4_name+" is right!");
 		btnPod1.setText(player1);
+=======
+    		}
+
+    	}
+    if(player4_role.equals("MANTRI"))
+    	{
+    	Log.v("AkhandBakar", "##########Mantri"+ player4_name);
+    	if(guess)
+    		{
+    		l = l+80;
+    		p4score=l;
+    		txtTurn.setText(player4_name+" is right!");
+    		btnPod1.setText(player1);
+>>>>>>> experiment
 			btnPod2.setText(player2);
 			btnPod3.setText(player3);
 			btnPod4.setText(player4);
@@ -1606,6 +1993,7 @@ if(player4_role.equals("MANTRI"))
 			btnPod2.setBackgroundResource(R.drawable.podopen);
 			btnPod3.setBackgroundResource(R.drawable.podopen);
 			btnPod4.setBackgroundResource(R.drawable.podopen);
+<<<<<<< HEAD
 		if(player1_role.equals("CHOR"))
 			{
 			p1score=i;
@@ -1678,6 +2066,80 @@ if(player4_role.equals("MANTRI"))
 		p4score = l;
 		txtTurn.setText(player4_name+" is wrong!");
 		btnPod1.setText(player1);
+=======
+    		if(player1_role.equals("CHOR"))
+    			{
+    			p1score=i;
+    			
+    			
+    			if(player2_role.equals("RAJA")){
+    				
+    				j = j+100;
+    				k = k+50;
+    				p2score=j;
+        			p3score=k;
+    				
+    			}else{
+    				
+    				j = j+50;
+    				k = k+100;
+    				p2score=j;
+        			p3score=k;
+    				
+    			}
+    			}
+    		if(player2_role.equals("CHOR"))
+    			{
+    			
+    			p2score=j;
+    			
+    			
+    			if(player1_role.equals("RAJA")){
+    				
+    				i = i+100;
+    				k = k+50;
+    				p1score=i;
+    				p3score=k;
+    			}else{
+    				
+    				i = i+50;
+    				k = k+100;
+    				p1score=i;
+    				p3score=k;
+    				
+    			}
+    			
+    			}
+    		if(player3_role.equals("CHOR"))
+    			{
+    			
+    			p3score=k;
+    			
+    			if(player1_role.equals("RAJA")){
+    				
+    				i = i+100;
+    				j = j+50;
+    				p1score=i;
+        			p2score=j;
+    			}else{
+    				
+    				i = i+50;
+    				j = j+100;
+    				p1score=i;
+        			p2score=j;
+    				
+    			}
+    			
+    			
+    			}
+    		}
+    	else
+    		{
+    		l = l-80;
+    		p4score = l;
+    		txtTurn.setText(player4_name+" is wrong!");
+    		btnPod1.setText(player1);
+>>>>>>> experiment
 			btnPod2.setText(player2);
 			btnPod3.setText(player3);
 			btnPod4.setText(player4);
@@ -1696,14 +2158,22 @@ if(player4_role.equals("MANTRI"))
 				j = j+100;
 				k = k+50;
 				p2score=j;
+<<<<<<< HEAD
 			p3score=k;
+=======
+    			p3score=k;
+>>>>>>> experiment
 				
 			}else{
 				
 				j = j+50;
 				k = k+100;
 				p2score=j;
+<<<<<<< HEAD
 			p3score=k;
+=======
+    			p3score=k;
+>>>>>>> experiment
 				
 			}
 			}
@@ -1739,18 +2209,27 @@ if(player4_role.equals("MANTRI"))
 				i = i+100;
 				j = j+50;
 				p1score=i;
+<<<<<<< HEAD
 			p2score=j;
+=======
+    			p2score=j;
+>>>>>>> experiment
 			}else{
 				
 				i = i+50;
 				j = j+100;
 				p1score=i;
+<<<<<<< HEAD
 				p2score=j;
+=======
+    			p2score=j;
+>>>>>>> experiment
 				
 			}
 			
 			
 			}
+<<<<<<< HEAD
 		}
 
 	}
@@ -1769,4 +2248,25 @@ Log.v("AkhandBakar","##########Score"+i);
 	txtPlayer4.setText("4."+player4_name+"["+l+"]");	
 	Log.v("AkhandBakar",player4+"["+p4score+"]");
 }
+=======
+    		}
+
+    	}
+    	
+    
+    Log.v("AkhandBakar", "##########Score "+ i);
+	txtPlayer1.setText("1."+ player1_name + " [" + i + "]");
+	Log.v("AkhandBakar", player1 + " [" + i + "]");
+	
+	txtPlayer2.setText("2." + player2_name+ " [" + j + "]");
+	
+	Log.v("AkhandBakar", player2 + " [" + p2score + "]");
+	
+	txtPlayer3.setText("3." + player3_name+ " [" + k + "]");
+	Log.v("AkhandBakar", player3 + " [" + p3score + "]");
+	
+	txtPlayer4.setText("4."+player4_name+ " [" + l + "]");	
+	Log.v("AkhandBakar", player4 + " [" + p4score + "]");
+    }
+>>>>>>> experiment
 }

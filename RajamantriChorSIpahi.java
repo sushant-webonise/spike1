@@ -1,4 +1,12 @@
 public class RajaMantri extends Activity {
+<<<<<<< HEAD
+=======
+    
+	
+	@Override
+	public void onBackPressed() {
+		
+>>>>>>> experiment
 
 	@Override
 	public void onBackPressed() {
@@ -6,14 +14,23 @@ public class RajaMantri extends Activity {
 	}
 
 	@Override
+<<<<<<< HEAD
 	protected void onPostResume(){
+=======
+	protected void onPostResume() {
+>>>>>>> experiment
 		// TODO Auto-generated method stub
 		super.onpostresume();
 	}
 
 	@Override
+<<<<<<< HEAD
 	public boolean onKeyDown(intkeyCode,KeyEventevent){
 		AlertDialogdialog=new AlertDialog.Builder(this).create();
+=======
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		AlertDialog dialog = new AlertDialog.Builder(this).create();
+>>>>>>> experiment
 		dialog.setTitle("Exit game!");
 		dialog.setMessage("Are you sure you want to exit the game?");
 		dialog.setButton("Exit", new DialogInterface.OnClickListener(){
@@ -37,7 +54,11 @@ public class RajaMantri extends Activity {
 	}
 
 	@Override
+<<<<<<< HEAD
 	public void onLowMemory(){
+=======
+	public void onLowMemory() {
+>>>>>>> experiment
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
 		dialog.setTitle("Low memory!");
 		dialog.setMessage("Too many apps open, kindly close some other apps and try again!");
