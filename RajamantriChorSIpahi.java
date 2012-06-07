@@ -65,8 +65,8 @@ public class RajaMantri extends Activity {
 		super.onPause();
 	}
 
-	String[] solutionArray = { "RAJA", "MANTRI", "CHOR", "SIPAHI"};
-	String[] playersArray = {"Player1", "Player2", "Player3", "Player4"};
+	String[] solutionArray = {"RAJA","MANTRI","CHOR","SIPAHI"};
+	String[] playersArray = {"Player1", "Player2","Player3","Player4"};
 	static String player1_name = "" ;
 	static String player2_name = "";
 	static String player3_name = "";
@@ -125,7 +125,7 @@ public class RajaMantri extends Activity {
     public void onRestart(){
     	
     	super.onRestart();
-    /*	player1_name = "" ;
+    /*	player1_name = "";
     	player2_name = "";
     	player3_name = "";
     	player4_name = "";
@@ -146,7 +146,7 @@ public class RajaMantri extends Activity {
     public void onResume(){
     	
     	super.onResume();
-    	/*player1_name = "" ;
+    	/*player1_name = "";
     	player2_name = "";
     	player3_name = "";
     	player4_name = "";
@@ -181,7 +181,7 @@ public class RajaMantri extends Activity {
 			public void onClick(View v) {
 				setContentView(R.layout.help);
 				 // Create the adView
-			    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+			    AdView adView = new AdView(RajaMantri.this,AdSize.BANNER,"a14e156523d01de");
 			    // Lookup your LinearLayout assuming it’s been given
 			    // the attribute android:id="@+id/mainLayout"
 			    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayoutHelp);
@@ -197,7 +197,7 @@ public class RajaMantri extends Activity {
 					
 					public void onClick(View v) {
 						
-						Intent i = new Intent(RajaMantri.this, RajaMantri.class);
+						Intent i = new Intent(RajaMantri.this,RajaMantri.class);
 						RajaMantri.this.startActivity(i);
 						finish();
 						
@@ -212,7 +212,7 @@ public class RajaMantri extends Activity {
  			// TODO Auto-generated method stub
  		setContentView(R.layout.rmcsp);	
  		 // Create the adView
-	    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+	    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER,"a14e156523d01de");
 	    // Lookup your LinearLayout assuming it’s been given
 	    // the attribute android:id="@+id/mainLayout"
 	    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayoutPlayer);
@@ -231,7 +231,7 @@ public class RajaMantri extends Activity {
  		lblPlayer3 = (TextView) findViewById(R.id.lblPlayer3);
  		lblPlayer4 = (TextView) findViewById(R.id.lblPlayer4);
  		
- 		Display display = getWindowManager().getDefaultDisplay(); 
+ 		Display display = getWindowManager().getDefaultDisplay();
  		int width = display.getWidth();
  		int height = display.getHeight();
  		
@@ -253,7 +253,7 @@ public class RajaMantri extends Activity {
 			
 			
 			public void onClick(View v) {
-				Intent i = new Intent(RajaMantri.this, RajaMantri.class);
+				Intent i = new Intent(RajaMantri.this,RajaMantri.class);
 				RajaMantri.this.startActivity(i);
 				finish();
 				
@@ -274,13 +274,13 @@ public class RajaMantri extends Activity {
 		 		
 				if(player1_name.equals("")||player2_name.equals("")||player3_name.equals("")||player4_name.equals("")){
 					
-					Toast toast = Toast.makeText(getBaseContext(), "Enter player names!", 8000);
+					Toast toast = Toast.makeText(getBaseContext(),"Enter player names!",8000);
 					toast.show();
 					
 				}else{
 					setContentView(R.layout.rmcsgnew);	
 					 // Create the adView
-				    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+				    AdView adView = new AdView(RajaMantri.this,AdSize.BANNER,"a14e156523d01de");
 				    // Lookup your LinearLayout assuming it’s been given
 				    // the attribute android:id="@+id/mainLayout"
 				    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayout);
@@ -347,7 +347,7 @@ public class RajaMantri extends Activity {
 
 		
 		});
- 		 
+ 		
        
     }
     
@@ -1068,7 +1068,7 @@ public class RajaMantri extends Activity {
 							}
 						});
 					}
-				});    
+				});
 			
 			btnPod1.setText("");
 			btnPod2.setText("");
@@ -1103,7 +1103,7 @@ public class RajaMantri extends Activity {
     void shuffleArray(String[] solutionArray)
     {
     	Random rnd = new Random();
-    	for (int i = solutionArray.length - 1; i >= 0; i--)
+    	for (int i = solutionArray.length - 1; i >= 0;i--)
     		{
     			int index = rnd.nextInt(i + 1);
   
@@ -1118,7 +1118,7 @@ public class RajaMantri extends Activity {
     	Log.v("AkhandBakar", "##########"+ guess);
     	if(player1_role.equals("MANTRI"))
     	{
-    		Log.v("AkhandBakar", "##########Mantri"+ player1_name);
+    		Log.v("AkhandBakar","##########Mantri"+player1_name);
     	if(guess)
     		{
     		i = i+80;
@@ -1266,7 +1266,7 @@ public class RajaMantri extends Activity {
     	{
     	if(guess)
     		{
-    		Log.v("AkhandBakar", "##########Mantri"+ player2_name);
+    		Log.v("AkhandBakar","##########Mantri"+player2_name);
     		j = j+80;
     		p2score=j;
     		txtTurn.setText(player2_name+" is right!");
