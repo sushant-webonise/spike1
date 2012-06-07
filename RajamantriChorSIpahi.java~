@@ -111,6 +111,7 @@ public class RajaMantri extends Activity {
 	}
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	String[] solutionArray={"RAJA","MANTRI","CHOR","SIPAHI"};
 	String[] playersArray={"Player1","Player2","Player3","Player4"};
 	static String player1_name="";
@@ -137,6 +138,10 @@ public class RajaMantri extends Activity {
 =======
 	String[] solutionArray = { "RAJA", "MANTRI", "CHOR", "SIPAHI"};
 	String[] playersArray = {"Player1", "Player2", "Player3", "Player4"};
+=======
+	String[] solutionArray = {"RAJA","MANTRI","CHOR","SIPAHI"};
+	String[] playersArray = {"Player1", "Player2","Player3","Player4"};
+>>>>>>> experiment
 	static String player1_name = "" ;
 	static String player2_name = "";
 	static String player3_name = "";
@@ -201,6 +206,7 @@ public class RajaMantri extends Activity {
     	
     	super.onRestart();
 <<<<<<< HEAD
+<<<<<<< HEAD
     /*	player1_name="";
     	player2_name="";
     	player3_name="";
@@ -210,6 +216,9 @@ public class RajaMantri extends Activity {
     	player2="";
 =======
     /*	player1_name = "" ;
+=======
+    /*	player1_name = "";
+>>>>>>> experiment
     	player2_name = "";
     	player3_name = "";
     	player4_name = "";
@@ -232,9 +241,13 @@ public class RajaMantri extends Activity {
     	
     	super.onResume();
 <<<<<<< HEAD
+<<<<<<< HEAD
     	/*player1_name = "";
 =======
     	/*player1_name = "" ;
+>>>>>>> experiment
+=======
+    	/*player1_name = "";
 >>>>>>> experiment
     	player2_name = "";
     	player3_name = "";
@@ -270,7 +283,7 @@ public class RajaMantri extends Activity {
 			public void onClick(View v) {
 				setContentView(R.layout.help);
 				 // Create the adView
-			    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+			    AdView adView = new AdView(RajaMantri.this,AdSize.BANNER,"a14e156523d01de");
 			    // Lookup your LinearLayout assuming it’s been given
 			    // the attribute android:id="@+id/mainLayout"
 			    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayoutHelp);
@@ -286,7 +299,7 @@ public class RajaMantri extends Activity {
 					
 					public void onClick(View v) {
 						
-						Intent i = new Intent(RajaMantri.this, RajaMantri.class);
+						Intent i = new Intent(RajaMantri.this,RajaMantri.class);
 						RajaMantri.this.startActivity(i);
 						finish();
 						
@@ -301,7 +314,7 @@ public class RajaMantri extends Activity {
  			// TODO Auto-generated method stub
  		setContentView(R.layout.rmcsp);	
  		 // Create the adView
-	    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+	    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER,"a14e156523d01de");
 	    // Lookup your LinearLayout assuming it’s been given
 	    // the attribute android:id="@+id/mainLayout"
 	    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayoutPlayer);
@@ -325,9 +338,13 @@ public class RajaMantri extends Activity {
  		lblPlayer4 = (TextView) findViewById(R.id.lblPlayer4);
  		
 <<<<<<< HEAD
+<<<<<<< HEAD
  		Display display = getWindowManager().getDefaultDisplay();
 =======
  		Display display = getWindowManager().getDefaultDisplay(); 
+>>>>>>> experiment
+=======
+ 		Display display = getWindowManager().getDefaultDisplay();
 >>>>>>> experiment
  		int width = display.getWidth();
  		int height = display.getHeight();
@@ -351,9 +368,13 @@ public class RajaMantri extends Activity {
 			
 			public void onClick(View v) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 				Intent i = new Intent(RajaMantri.this,RajaMantri.class);
 =======
 				Intent i = new Intent(RajaMantri.this, RajaMantri.class);
+>>>>>>> experiment
+=======
+				Intent i = new Intent(RajaMantri.this,RajaMantri.class);
 >>>>>>> experiment
 				RajaMantri.this.startActivity(i);
 				finish();
@@ -375,12 +396,13 @@ public class RajaMantri extends Activity {
 		 		
 				if(player1_name.equals("")||player2_name.equals("")||player3_name.equals("")||player4_name.equals("")){
 					
-					Toast toast = Toast.makeText(getBaseContext(), "Enter player names!", 8000);
+					Toast toast = Toast.makeText(getBaseContext(),"Enter player names!",8000);
 					toast.show();
 					
 				}else{
 					setContentView(R.layout.rmcsgnew);	
 					 // Create the adView
+<<<<<<< HEAD
 <<<<<<< HEAD
 				AdView adView = new AdView(RajaMantri.this,AdSize.BANNER,"a14e156523d01de");
 				// Lookup your LinearLayout assuming it’s been given
@@ -392,6 +414,9 @@ public class RajaMantri extends Activity {
 				adView.loadAd(new AdRequest());
 =======
 				    AdView adView = new AdView(RajaMantri.this, AdSize.BANNER, "a14e156523d01de");
+=======
+				    AdView adView = new AdView(RajaMantri.this,AdSize.BANNER,"a14e156523d01de");
+>>>>>>> experiment
 				    // Lookup your LinearLayout assuming it’s been given
 				    // the attribute android:id="@+id/mainLayout"
 				    LinearLayout layout = (LinearLayout)findViewById(R.id.mainLayout);
@@ -472,10 +497,14 @@ public class RajaMantri extends Activity {
 		
 		});
 <<<<<<< HEAD
+<<<<<<< HEAD
 		}
 
 =======
  		 
+=======
+ 		
+>>>>>>> experiment
        
     }
     
@@ -1251,9 +1280,13 @@ public void shuffle(){
 						});
 					}
 <<<<<<< HEAD
+<<<<<<< HEAD
 				});
 =======
 				});    
+>>>>>>> experiment
+=======
+				});
 >>>>>>> experiment
 			
 			btnPod1.setText("");
@@ -1327,7 +1360,7 @@ static void updateScore(){
     void shuffleArray(String[] solutionArray)
     {
     	Random rnd = new Random();
-    	for (int i = solutionArray.length - 1; i >= 0; i--)
+    	for (int i = solutionArray.length - 1; i >= 0;i--)
     		{
     			int index = rnd.nextInt(i + 1);
   
@@ -1342,7 +1375,7 @@ static void updateScore(){
     	Log.v("AkhandBakar", "##########"+ guess);
     	if(player1_role.equals("MANTRI"))
     	{
-    		Log.v("AkhandBakar", "##########Mantri"+ player1_name);
+    		Log.v("AkhandBakar","##########Mantri"+player1_name);
     	if(guess)
     		{
     		i = i+80;
@@ -1571,7 +1604,7 @@ if(player2_role.equals("MANTRI"))
     	{
     	if(guess)
     		{
-    		Log.v("AkhandBakar", "##########Mantri"+ player2_name);
+    		Log.v("AkhandBakar","##########Mantri"+player2_name);
     		j = j+80;
     		p2score=j;
     		txtTurn.setText(player2_name+" is right!");
