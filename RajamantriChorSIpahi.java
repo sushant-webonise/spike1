@@ -1,21 +1,21 @@
-public class rajamantri extends Activity {
+public class RajaMantri extends Activity {
     
 	
 	@Override
-	public void onbackpressed() {
+	public void onBackPressed() {
 		
 
 		
 	}
 
 	@Override
-	protected void onpostresume() {
+	protected void onPostResume() {
 		// TODO Auto-generated method stub
 		super.onpostresume();
 	}
 
 	@Override
-	public boolean onkeydown(int keyCode, KeyEvent event) {
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
 		dialog.setTitle("Exit game!");
 		dialog.setMessage("Are you sure you want to exit the game?");
@@ -40,7 +40,7 @@ public class rajamantri extends Activity {
 	}
 
 	@Override
-	public void onlowmemory() {
+	public void onLowMemory() {
 		AlertDialog dialog = new AlertDialog.Builder(this).create();
 		dialog.setTitle("Low memory!");
 		dialog.setMessage("Too many apps open, kindly close some other apps and try again!");
